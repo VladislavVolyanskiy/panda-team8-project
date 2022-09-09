@@ -1,0 +1,113 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+}
+
+.order__tittle{
+    font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #487996;
+        margin-bottom: 16px;
+        margin-top: 0;
+        
+}
+
+.order__subtitle{
+      font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+    
+        color: #487996;
+}
+.first-subtittle{
+    margin-top: 40px;
+    margin-bottom: 28px;
+
+}
+.other-subtittle{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.order__item{
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    
+        color: #2B2B2B;
+}
+
+.order__list{
+width: 100%;
+margin: 0;
+}
+.order__item:not(:last-child){
+    margin-bottom: 16px;
+}
+img{
+    width: 100%;
+}
+.connect__choice{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    
+     color: #2B2B2B;
+}
+.connect__field{
+    display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #487996;
+   
+}
+.connect__view{
+    display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #487996;
+        outline: transparent;
+}
+.connect__featback{
+    display: block;
+    width: 100%;
+    height: 199px;
+    resize: none;
+    border: 1px solid #487996;
+    border-radius: 50px 0px;
+}
+.connect__featback::placeholder {
+padding: 22px 0px 22px 20px;
+font-family: 'Cera Pro';
+font-style: normal;
+font-weight: 400;
+ font-size: 16px;
+line-height: 1.25;
+
+ color: #CDCDCD;
+}
+
+.connect__footnote{ 
+    font-family: 'Cera Pro';
+ font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+       
+        color: #CDCDCD;
+}
+.contact__list{
+    margin-bottom: 24px;
+}

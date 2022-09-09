@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./stile.css" />
+  </head>
+  <body>
     <main>
-        <section>
-            <h2> зробити замовлення</h1>
-                <img src="./src/images/galery-image1 1.jpg" alt="">
-            <p>На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.</p>
-            <p>Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі ваші запитання.</p>
-            <h3>ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
-            <form action="">
-            <label for="user-name">Ім’я</label>
-            <input 
-            class=""
+      <section class="order">
+        <h2 class="order__tittle">зробити замовлення</h2>
+        <img src="./src/images/galery-image1 1.jpg" alt="" />
+        <ul class="order__list list">
+          <li class="order__item">
+            На цій сторінці ви можете зробити замовлення заповнивши форму і ми
+            зв'яжемося з вами.
+          </li>
+          <li class="order__item">
+            Наші фахівці допоможуть підібрати оптимальні для вас параметри і
+            дадуть відповідь на всі ваші запитання.
+          </li>
+        </ul>
+        <h3 class="order__subtitle first-subtittle">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+        <form name="order__form" class="connect order__form">
+          <label class="connect__name" for="user-name">Ім’я</label>
+          <input
+            class="connect__field"
             type="text"
             name="user-name"
-            id="user-name">
-            <label class="" for="email">Email</label>
-              <input class="t" 
-              type="email" name="email" 
-              id="email" />
-            <label for="view">Види пластика</label>
-<select id="view" name="view">
-  <option value="xs">ABS</option>
-  <option value="s">PLA</option>
-  <option value="m">HIPS</option>
-  <option value="l">Труднощі у виборі - ми допоможемо</option>
-</select> 
- <label for="quality">Якість друку</label>
-<select id="quality" name="quality">
-  <option value="xs">300 мікрон</option>
-  <option value="s">200 мікрон</option>
-  <option value="m">100 мікрон</option>
-  <option value="l">Труднощі у виборі - ми допоможемо</option>
-</select> 
- <label for="color">Колір</label>
-<select id="color" name="color">
-  <option value="xs">red</option>
-  <option value="s">green</option>
-  <option value="m">yellow</option>
-  <option value="l">blue</option>
-</select> 
-<label class="" for="message">Повідомлення</label>
-<textarea name="message" id="message"  placeholder="Залишіть своє повідомлення"></textarea>
-<p>*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-<button type="button">ВІДПРАВИТИ</button>
-</form>
-<h3>ТЕЛЕФОНИ</h3>
-<a href="">+38 (095) -73-84-551</a>
-<a href="">+38 (098) -00-25-235</a>
-<h3>Email</h3>
-<a href="">3dfreedom.info@gmail.com</a>
-<h3>Робочий час</h3>
-<p>Пн-пт:
-з 8:00 до 19:00</p>
-<p>Сб, Нд:
-з 10:00 до 17:00</p>
+            id="user-name"
+          />
+          <label class="connect__email" for="email">Email</label>
+          <input class="connect__field" type="email" name="email" id="email" />
+          <label class="connect__choice" for="view">Види пластика</label>
+          <select class="connect__view" id="" name="view">
+            <option value="xs">ABS</option>
+            <option value="s">PLA</option>
+            <option value="m">HIPS</option>
+            <option value="l">Труднощі у виборі - ми допоможемо</option>
+          </select>
+          <label class="connect__choice" for="quality">Якість друку</label>
+          <select class="connect__view" id="quality" name="quality">
+            <option value="xs">300 мікрон</option>
+            <option value="s">200 мікрон</option>
+            <option value="m">100 мікрон</option>
+            <option value="l">Труднощі у виборі - ми допоможемо</option>
+          </select>
+          <label class="connect__choice" for="color">Колір</label>
+          <select class="connect__view" id="color" name="color">
+            <option value="xs">red</option>
+            <option value="s">green</option>
+            <option value="m">yellow</option>
+            <option value="l">blue</option>
+          </select>
+          <label class="" for="message">Повідомлення</label>
+          <textarea
+            class="connect__featback"
+            name="message"
+            id="message"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <p class="connect__footnote">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
+          <button type="button">ВІДПРАВИТИ</button>
+        </form>
+        <h3 class="order__subtitle other-subtittle contact">ТЕЛЕФОНИ</h3>
+        <ul class="contact__list list">
+          <li class="contact__item">
+            <a href="" class="contact__link link">+38 (095) -73-84-551</a>
+          </li>
+          <li class="contact__item">
+            <a href="" class="contact__link link">+38 (098) -00-25-235</a>
+          </li>
+        </ul>
+        <h3 class="order__subtitle other-subtittle">Email</h3>
+        <a href="" class="contact__link link">3dfreedom.info@gmail.com</a>
+        <h3 class="order__subtitle other-subtittle time">РОБОЧИЙ ЧАС</h3>
+        <ul class="time__list list">
+          <li class="time__item">
+            Пн-пт:<br />
+            з 8:00 до 19:00
+          </li>
+          <li class="time__item">
+            Сб, Нд:<br />
+            з 10:00 до 17:00
+          </li>
+        </ul>
       </section>
     </main>
-</body>
+  </body>
 </html>
