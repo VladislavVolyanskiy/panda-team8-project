@@ -1,0 +1,32 @@
+.examples__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #487996;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.examples__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.examples__wrapper {
+  width: 130px;
+  height: 158px;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+}
+.examples__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #487996;
+}
