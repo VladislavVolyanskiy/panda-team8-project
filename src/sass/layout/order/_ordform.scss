@@ -1,0 +1,174 @@
+.order__tittle {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #487996;
+    margin-bottom: 16px;
+    margin-top: 0;
+
+}
+
+.order__subtitle {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #487996;
+}
+
+.first-subtittle {
+    margin-top: 40px;
+    margin-bottom: 28px;
+
+}
+
+.other-subtittle {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.order__item {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2B2B2B;
+}
+
+.order__list {
+    width: 100%;
+    margin: 0;
+}
+
+.order__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.connect__choice {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: #2B2B2B;
+}
+
+.connect__field {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #487996;
+
+}
+
+.connect__field:hover {
+    border-bottom: 1px solid #008CEF;
+    ;
+}
+
+.connect__view {
+    display: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #487996;
+    outline: transparent;
+}
+
+.connect__choice:hover .connect__view {
+    display: block;
+    border: 0;
+}
+
+.connect__featback {
+    margin-bottom: 4px;
+    display: block;
+    width: 100%;
+    height: 199px;
+    resize: none;
+    border: 1px solid #487996;
+    border-radius: 50px 0px;
+}
+
+.connect__featback::placeholder {
+    padding: 22px 0px 22px 20px;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: #CDCDCD;
+}
+
+.connect__footnote {
+    margin-top: 0;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: #CDCDCD;
+}
+
+.contact__list {
+    margin-bottom: 24px;
+}
+
+.contact__link {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25px;
+
+    color: #2B2B2B;
+}
+
+.email-wrap {
+    margin-bottom: 24px;
+}
+
+.tel-wrap {
+    margin-bottom: 24px;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.connect__name,
+.connect__email {
+    position: absolute;
+}
+
+.connect__message {
+    margin-bottom: 4px;
+}
+
+.form-select {
+    border-bottom: 1px solid #487996;
+
+}
+
+.connect__choice::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #008CEF;
+
+
+}
