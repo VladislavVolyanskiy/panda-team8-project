@@ -1,4 +1,4 @@
-.contacts {
+.hero {
     &__title{
         font-family: 'Comic Neue', cursive;
         font-weight: 700;
@@ -27,4 +27,35 @@
     height: 171px;
     border-radius: 15px;
     margin-bottom: 16px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__list{
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title{
+        font-family: 'Comic Neue', cursive;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: $title-color;
+
+    }
+
+    &__item{
+        text-decoration: none;
+
+        font-size: 16px;
+        line-height: 20px;
+
+        color: $text-color;
+    }
 }
