@@ -73,12 +73,19 @@ img{
         border-bottom: 1px solid #487996;
    
 }
-.connect__view{
-    display: block;
+.connect__field:hover{
+    border-bottom: 1px solid #008CEF;;
+}
+.connect__view {
+    display: none;
         width: 100%;
         border: none;
         border-bottom: 1px solid #487996;
         outline: transparent;
+}
+.connect__choice:hover .connect__view{
+    display: block;
+    border: 0;
 }
 .connect__featback{
     margin-bottom: 4px;
@@ -132,7 +139,22 @@ line-height: 1.25;
     position: relative;
     margin-bottom: 44px;
 }
-.connect__name ,.connect__email, .connect__choice{
+.connect__name ,.connect__email {
     position: absolute;
 }
+.connect__message{
+    margin-bottom: 4px;
+}
+.form-select{
+    border-bottom: 1px solid #487996 ;
 
+}
+.connect__choice::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #008CEF;
+    
+
+}
