@@ -81,6 +81,7 @@ img{
         outline: transparent;
 }
 .connect__featback{
+    margin-bottom: 4px;
     display: block;
     width: 100%;
     height: 199px;
@@ -100,6 +101,7 @@ line-height: 1.25;
 }
 
 .connect__footnote{ 
+    margin-top: 0;
     font-family: 'Cera Pro';
  font-style: normal;
         font-weight: 400;
@@ -111,3 +113,26 @@ line-height: 1.25;
 .contact__list{
     margin-bottom: 24px;
 }
+.contact__link{
+    font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25px;
+   
+            color: #2B2B2B;
+}
+.email-wrap{
+    margin-bottom: 24px;
+}
+.tel-wrap{
+    margin-bottom: 24px;
+}
+.form-field{
+    position: relative;
+    margin-bottom: 44px;
+}
+.connect__name ,.connect__email, .connect__choice{
+    position: absolute;
+}
+
