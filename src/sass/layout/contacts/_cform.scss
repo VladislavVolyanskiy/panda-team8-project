@@ -1,6 +1,7 @@
 .cform{
-    padding-top: 40px;
-    padding-bottom: 60px;
+    @media screen and (max-width: 1439px){
+        margin-bottom: 60px;
+    }
 
     @include tablet{
         max-width: 400px;
