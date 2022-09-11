@@ -1,8 +1,87 @@
-// .columns__text {
-//   color: teal;
-// }
-// .scan-icon {
-//   background-image: url(../images/favicon.jpg);
-//   height: 100%;
-//   width: 200px;
-// }
+.scan__icon {
+    margin-top: 20px;
+  background-image: url('../images/scanning-1x.jpg');
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text_scanning {
+  margin-bottom: 16px;
+}
+.columns {
+  margin-bottom: 16px;
+}
+.scan__text {
+    padding-top: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+  .scan__icon {
+    background-image: url('../images/scanning-2x.jpg');
+  }
+}
+@media screen and (max-width: 1439px){
+
+}
+@media screen and (min-width: 768px) {
+    .scan__text {
+        width: 515px;
+    }
+    .scan-container {
+        position: relative;
+    }
+    .scan__icon {
+        position:absolute;
+        bottom: 30px;
+        right: 7px;
+        width: 240px;
+        height: 172px;
+       
+        background-image: url('../images/scanning-1x.jpg');
+      }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .scan__icon {
+        background-image: url('../images/scanning-2x.jpg');
+      }
+  }
+  @media screen and (min-width: 1440px) {
+    .scan-container {
+        padding-left: 150px;
+    }
+    .scan__text-wrap{
+        display: flex;
+        gap: 72px;
+    }
+    .scan__text {
+        padding-top: 40px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+ 
+        .scan__icon {
+            bottom: -85px;
+            right: 50px;
+            width: 435px;
+            height: 286px;
+        background-image: url('../images/scanning-1x.jpg');
+      }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .scan__icon {
+        background-image: url('../images/scanning-2x.jpg');
+      }
+  }
