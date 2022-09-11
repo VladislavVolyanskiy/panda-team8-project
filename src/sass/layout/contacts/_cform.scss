@@ -42,7 +42,6 @@
         .cform__field:focus-within > &{
             transform: translateY(-20px);
         }
-      
     }
 
     &__input{
@@ -53,7 +52,6 @@
         &:not(:placeholder-shown) + .cform__label{
             transform: translateY(-20px);
         }
-
     }
 
     &__textarea{
@@ -68,7 +66,6 @@
         &::placeholder{
             padding: 22px 20px;
         }
-
     }
 
     &__textarea-label{
