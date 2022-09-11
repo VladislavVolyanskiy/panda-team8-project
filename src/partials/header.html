@@ -1,6 +1,5 @@
 <header class="header">
   <div class="container">
-    <!-- мобільна версія -->
     <div class="header__mobile">
         <a href="./index.html" lang="en" class="link_logo" >
             <img src="./images/3dfreedom-2.png" class="logo" alt="Логотип компанії">
@@ -16,8 +15,33 @@
                 <use href="./images/icon.svg#icon-window-close" class="icon-menu__cross"></use>
                 <use href="./images/icon.svg#icon-burger-menu" class="icon-menu"></use>
             </svg>
-
-          </button>
+        </button>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link"
+                >Головна</a
+              >
+            </li>
+            <li class="header-nav__item header-nav-serv">
+              Послуги
+              <ul class="header-nav-sub is-hidden">
+                <li class="header-nav-sub__item ">
+                  <a href="./3dmodel.html" class="header-nav-sub__link ">3D Моделювання</a></li>
+                <li class="header-nav-sub__item">
+                  <a href="./3dprint.html" class="header-nav-sub__link">3D Сканування</a></li>
+                <li class="header-nav-sub__item">
+                  <a href="./3dscan.html" class="header-nav-sub__link">3D Друк</a></li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <a href="./contact.html" class="header-nav__link">Замовити</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./order.html" class="header-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <div class="header__mobile-end">
             <button
                 type="button"
@@ -26,7 +50,7 @@
                 aria-expanded="false"
             >
                 <svg width="24" height="24" class="icon-tel">
-                    <use href="./images/icon.svg#icon-call"></use>
+                  <use href="./images/icon.svg#icon-call"></use>
                 </svg>
             </button>            
             <div class="tel-container is-hidden">
@@ -43,8 +67,8 @@
                     </li>
                 </ul> 
             </div>            
-            <ul class="lang-top ">
-                <li class="lang__item lang-top__open lang-top__close"><span class="lang-main">Ukr</span>
+            <ul class="lang-top  lang-top__open lang-top__close">
+                <li class="lang-top__item"><a href="" class="lang__link">Ukr</a>
                     <ul class="lang-sub is-hidden">
                         <li class="lang__item"><a href="" class="lang__link">Eng</a></li>
                         <li class="lang__item"><a href="" class="lang__link">Rus</a></li>
@@ -94,8 +118,7 @@
               <li class="mobile-nav__item">
                 <a href="./order.html" class="mobile-nav__link">Контакти</a>
               </li>
-            </ul> 
-    
+            </ul>     
         </div>
     </div>
   </div>
