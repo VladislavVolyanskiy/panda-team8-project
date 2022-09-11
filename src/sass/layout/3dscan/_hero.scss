@@ -56,6 +56,9 @@
       }
   }
   @media screen and (min-width: 1440px) {
+    .scan-container {
+        padding-left: 150px;
+    }
     .scan__text-wrap{
         display: flex;
         gap: 72px;
@@ -68,7 +71,7 @@
  
         .scan-icon {
             bottom: -85px;
-            right: 150px;
+            right: 50px;
             width: 435px;
             height: 286px;
         background-image: url('../images/scanning-1x.jpg');
