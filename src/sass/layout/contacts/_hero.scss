@@ -1,0 +1,53 @@
+.hero {
+    
+    &__list{
+        list-style: none;
+    }
+    &__title{
+        font-family: 'Comic Neue', cursive;
+        font-weight: 700;
+        width: 100%;
+        
+        color: $title-color;
+
+        margin-bottom: 16px;
+
+        @media  screen and (max-width:767px) {
+            font-size: 24px;
+            line-height: calc(30px/24px);   
+        }
+        @include tablet{
+            font-size: 36px;
+            line-height: calc(45px/36px);
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color;
+
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+    }
+}
+.video {
+    background-color: aqua;
+    border-radius: 15px;
+
+
+    @media  screen and (max-width:767px) {
+        max-width: 280px;
+        height: 171px;
+        margin-bottom: 16px;
+
+        @include centeredMarg; 
+    }
+
+    @include tablet {
+        max-width: 336px;
+        height: 261px;
+    }
+}
