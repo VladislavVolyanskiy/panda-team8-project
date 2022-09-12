@@ -1,26 +1,7 @@
-.container {
-  width: 100%;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    max-width: 1440px;
-  }
-}
 .examples {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .examples__title {
+  font-family: 'Cera Pro';
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -29,11 +10,11 @@
 }
 .examples__list {
   display: flex;
+
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
-  @media screen and (min-width: 480px) {
-  }
+
   @media screen and (min-width: 768px) {
     gap: 32px;
   }
