@@ -341,10 +341,10 @@ body.no-scroll {
     //     visibility: hidden;
     //     pointer-events: none;
     //   }
-      // .lang__link:hover &, .lang__link:focus &{
-      //   display: block;
+      .lang__link:hover &, .lang__link:focus &{
+        display: block;
 
-      // }
+      }
     }
  
   .lang__link {
