@@ -55,7 +55,7 @@
         height: 261px;
     }
     @include desktop {
-        width: 555px;
+        max-width: 555px;
         height: 315px;
     }
 }
