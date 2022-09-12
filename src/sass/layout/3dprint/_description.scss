@@ -8,24 +8,39 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    // width: 50%;
+    // margin-right: 32px;
   }
 }
 
 .process__item-card {
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .process__item :not(:last-child) {
   margin-bottom: 16px;
 }
 .process__wrapper {
+  margin: 0;
   filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
   border-radius: 50px 0px;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 335px;
+    height: 462px;
+  }
 }
+.process__card {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    height: auto;
+  }
+}
+
 .process__text {
   font-weight: 300;
   font-size: 16px;
