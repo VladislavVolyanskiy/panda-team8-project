@@ -1,0 +1,45 @@
+.process {
+}
+
+.process__list {
+}
+
+.process__item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.process__item-card {
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+}
+
+.process__item :not(:last-child) {
+  margin-bottom: 16px;
+}
+.process__wrapper {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
+  border-radius: 50px 0px;
+  overflow: hidden;
+}
+.process__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+}
+.process__text--blue {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title-color;
+}
+.btn {
+  @extend %btn;
+  margin-top: 24px;
+  margin-bottom: 55px;
+}
