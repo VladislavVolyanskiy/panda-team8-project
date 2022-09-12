@@ -1,0 +1,86 @@
+.more-photos-section {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 80px;
+    padding-top: 30px;
+  }
+  @include desktop {
+    padding-bottom: 100px;
+    padding-top: 60px;
+  }
+}
+
+.more-photos-header {
+  margin-bottom: 16px;
+  font-family: 'Cera Pro';
+  color: #487996;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  @include desktop {
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
+}
+
+.more-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  column-count: 1;
+  column-gap: 16px;
+
+  @include mobile {
+    column-count: 2;
+  }
+  @include tablet {
+    column-count: 3;
+    gap: 32px;
+  }
+  @include desktop {
+    column-count: 3;
+    gap: 32px;
+    justify-content: center;
+  }
+}
+
+.loading {
+  margin: 0 auto;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.more-photos__picture {
+  width: 100%;
+}
+
+.more-photos__item {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.more-photos__item:nth-child(n + 4) {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
+}
+
+// .disk {
+//   @include desktop {
+//     margin: 0 auto;
+//   }
+// }
