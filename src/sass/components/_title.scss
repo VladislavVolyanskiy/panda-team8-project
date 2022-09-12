@@ -1,0 +1,13 @@
+.page-title {
+  @include font(24, 30, 700, 0.03);
+  text-transform: uppercase;
+  color: #487996;
+  // color: getColor('primary-accent-color');
+}
+.pretitle {
+  @include font(18, 23, 700, 0.03);
+  font-family: 'Cera Pro';
+  text-transform: uppercase;
+  color: #487996;
+  // color: getColor('primary-accent-color');
+}

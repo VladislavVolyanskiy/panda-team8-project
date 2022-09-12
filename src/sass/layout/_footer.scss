@@ -1,0 +1,149 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5fa;
+  box-shadow: 0 -10px 10px 2px rgba(72, 121, 150, 0.1);
+  /*box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1)*/
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.01em;
+  @include centeredMarg;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    padding: 32px;
+  }
+  @include desktop {
+    width: 1440px;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.footer__logo {
+  @include centeredMarg;
+  @include tablet {
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    margin-right: 277px;
+  }
+}
+
+.footer__position {
+  @include centeredFlex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.footer__part {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+  @extend %list;
+
+  @include tablet {
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-right: 103px;
+  }
+}
+.navigation__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.socials {
+  @include centeredFlex;
+  flex-direction: column;
+  @extend %list;
+  margin-top: 24px;
+  @include tablet {
+    margin-left: 52px;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+  @include desktop {
+    margin-left: 0px;
+    margin-right: 161px;
+  }
+}
+.socials__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.address {
+  @include centeredFlex;
+  flex-direction: column;
+  @include tablet {
+    margin-top: 0;
+    align-items: flex-end;
+  }
+  @include desktop {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+
+.mail {
+  margin-top: 24px;
+  @include tablet {
+    margin-top: 0;
+  }
+}
+.mail__link {
+  @extend %list;
+  text-decoration: none;
+  margin-top: 8px;
+  color: #487996;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.phones {
+  @include centeredFlex;
+  flex-direction: column;
+  margin-top: 24px;
+  @include tablet {
+    align-items: flex-end;
+  }
+  @include desktop {
+    align-items: flex-start;
+  }
+}
+.phones__item {
+  @extend %list;
+  margin-top: 8px;
+  color: #487996;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.phones__data {
+  text-decoration: none;
+}

@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+
+    <title>Головна</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;700&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
+  <body class="">
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- <include src="./partials/example.html"></include> -->
-    <include src="./partials/header.html"></include>
+    <include src="./partials/pages/3dscan/scanprocess.html"></include>
 
-    <include src="./partials/main/hero.html"></include>
-    <include src="./partials/main/gallery.html"></include>
-    <include src="./partials/main/morephoto.html"></include>
-    
-    <include src="./partials/3dmodel/hero.html"></include>
-    <include src="./partials/3dmodel/methods.html"></include>
-    <include src="./partials/3dmodel/wecreate.html"></include>
-    
-    <include src="./partials/3dscan/hero.html"></include>
-    <include src="./partials/3dscan/scanprocess.html"></include>
-    
-    <include src="./partials/3dprint/examlpes.html"></include>
-    <include src="./partials/3dprint/description.html"></include>
-    
-    <include src="./partials/order/hero.html"></include>
-    <include src="./partials/order/ordform.html"></include>
-    <include src="./partials/order/ordcontacts.html"></include>
-    
-    <include src="./partials/contacts/hero.html"></include>
-    <include src="./partials/contacts/contacts.html"></include>
-    <include src="./partials/contacts/cform.html"></include>
-    
-    <include src="./partials/footer.html"></include>
+  
+  <main>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/morephoto.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+  
+  <script src="./js/menu.js"></script>
+  <script src="./js/btnRefs.js"></script>
+  <script src="./js/contacts.js"></script>
+  <script src="./js/lang.js"></script>
   </body>
 </html>

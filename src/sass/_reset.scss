@@ -7,11 +7,22 @@ h5,
 h6 {
   margin: 0;
 }
+.list {
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 
 ul,
 ol {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 address {
@@ -20,10 +31,14 @@ address {
 
 a {
   color: currentColor;
+  list-style: none;
+  text-decoration: none;
 }
 
 button {
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 img {
