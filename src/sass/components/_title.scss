@@ -1,13 +1,24 @@
 .page-title {
   @include font(24, 30, 700, 0.03);
   text-transform: uppercase;
-  color: #487996;
-  // color: getColor('primary-accent-color');
+  color: $title-color;
+  @include tablet {
+    @include font(36, 45, 700, 0.03);
+  }
+  @include desktop {
+    @include font(48, 60, 700, 0.03);
+  }
 }
+
 .pretitle {
   @include font(18, 23, 700, 0.03);
-  font-family: 'Cera Pro';
   text-transform: uppercase;
-  color: #487996;
-  // color: getColor('primary-accent-color');
+  color: $title-color;
+    @include tablet {
+        @include font(24, 30, 700, 0.03);
+      }
+    
+    @include desktop {
+      @include font(36, 45, 700, 0.03);
+    }
 }
