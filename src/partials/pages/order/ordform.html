@@ -1,0 +1,70 @@
+<section class="order">
+  <div class="container">
+    <h3 class="order__subtitle first-subtittle">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+    <form name="order__form" class="connect order__form">
+      <label class="connect__name" for="user-name">Ім’я</label>
+      <input
+        class="connect__field"
+        type="text"
+        name="user-name"
+        id="user-name"
+      />
+      <label class="connect__email" for="email">Email</label>
+      <input class="connect__field" type="email" name="email" id="email" />
+      <ul class="connect__choice list">
+        <li class="form-select">
+          Види пластику
+          <svg class="connect__icon" width="10" height="10">
+            <use href="/src/images/Polygon 3.svg"></use>
+          </svg>
+          <ul class="connect__view list">
+            <li class="connect__select">ABS</li>
+            <li class="connect__select">PLA</li>
+            <li class="connect__select">HIPS</li>
+            <li class="connect__select">Труднощі у виборі - ми допоможемо</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="connect__choice list">
+        <li class="form-select">
+          Якість друку
+          <svg class="connect__icon" width="10" height="10">
+            <use href="/src/images/Polygon 3.svg"></use>
+          </svg>
+          <ul class="connect__view list">
+            <li class="connect__select">300 мікрон</li>
+            <li class="connect__select">200 мікрон</li>
+            <li class="connect__select">100 мікрон</li>
+            <li class="connect__select">Труднощі у виборі - ми допоможемо</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="connect__choice list">
+        <li class="form-select">
+          Колір
+          <svg class="connect__icon" width="10" height="10">
+            <use href="/src/images/Polygon 3.svg"></use>
+          </svg>
+          <ul class="connect__view list">
+            <li class="connect__select">red</li>
+            <li class="connect__select">green</li>
+            <li class="connect__select">yellow</li>
+            <li class="connect__select">black</li>
+          </ul>
+        </li>
+      </ul>
+      <label class="" for="message">Повідомлення</label>
+      <textarea
+        class="connect__featback"
+        name="message"
+        id="message"
+        placeholder="Залишіть своє повідомлення"
+      ></textarea>
+      <p class="connect__footnote">
+        *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+      </p>
+      <button class="order__btn" type="button">ВІДПРАВИТИ</button>
+    </form>
+  </div>
+</section>

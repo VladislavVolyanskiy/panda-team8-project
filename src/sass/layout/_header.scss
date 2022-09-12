@@ -1,0 +1,404 @@
+body.no-scroll {
+  overflow: hidden;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
+    &__mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+  }
+  .link_logo {
+    transform: scale(1);
+    transition: transform $actionTime $actionFunction;
+    &:hover{
+      transform: scale(1.3);
+    }
+  }
+  .logo {
+    display: block;
+    width: 101px;
+    height: 25px;
+
+    margin-top: 13px;
+
+    @include tablet(){
+        width: 125px;
+        height: 31px;
+        margin-top: 0;
+    }
+    @include desktop(){
+      width: 192px;
+      height: 48px;
+    }
+  }  
+  .header__button {
+    border: none;
+    background-color: transparent;
+
+    width: 32px;
+    height: 32px;
+  
+    @include centeredFlex();
+
+      &-pos {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      
+        transform: translate(-50%, -50%);
+      }
+      .header__mobile-end & {
+        @include tablet(){
+          display: none;
+        }
+      }
+      @include desktop(){
+        display: none;
+      }
+  }
+ .icon-menu {
+    fill: $primaryColor;
+    transition: fill 250ms;
+    width: 32px;
+    height: 32px;
+      @media screen and ( max-width: 767px) {
+        transition: fill $actionTime $actionFunction;
+        .menu-open:hover &, .menu-open:focus & {
+           fill: $focusColor;
+        }
+      }  
+      @include tablet(){
+          opacity: 1;
+          transition: opacity $actionTime $actionFunction;
+          .svg-open.is-open &{
+            opacity: 0;
+          }
+      }
+ }
+ .icon-menu__cross {
+        fill: $primaryColor;
+        
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+   @include tablet(){
+      opacity: 0;
+          
+      .svg-open.is-open &{
+        opacity: 1;
+      }
+    }
+  transition: opacity $actionTime $actionFunction;
+
+ }
+  .mobile-menu {
+    background-color: #ffffff;
+  
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  
+    top: 75px;
+    left: 0;
+    text-align: center;
+    overflow-y: scroll;
+  
+    opacity: 1;
+    padding-top: 60px;
+  
+    transition: opacity 500ms $actionFunction,
+    visibility 500ms $actionFunction;
+
+  @include tablet(){
+    width: 380px;
+      height: 100%;
+      top: 115px;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      padding-top: 0;
+  }
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    @include desktop(){
+      display: none;
+    }
+  }  
+  .mobile-nav {
+    @include centeredMarg();
+    display: block;
+  }  
+  .mobile-nav__serv{
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+    @include font(24, 30, 700, null);
+    font-family: "Cera Pro";
+    text-transform: uppercase;
+  
+    color: $primaryColor;
+  }
+  .mobile-nav__link {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  
+    @include font(24, 30, 700, null);
+    font-family: "Cera Pro";
+    text-transform: uppercase;
+  
+    color: $primaryColor;
+    transition: color $actionTime $actionFunction;
+    &:focus, &:hover {
+      color: $svgColor;
+    }
+  } 
+  .mobile-nav-sub__link {
+
+    position: relative;
+    display: inline-block;
+
+    padding-top: 12px;
+    padding-bottom: 12px;    
+
+    @include font(24, 30, 500, null);
+    font-family: "Cera Pro";
+    text-align: center;
+  
+    color: $primaryColor;
+    transition: color $actionTime $actionFunction;
+
+    &:focus, &:hover {
+      color: $svgColor;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        top: 50%;
+        left: -19px;
+        transform: translateY(-50%);
+      
+        background-color: $primaryColor;
+        border-radius: 3px 0px;
+       
+  }
+}
+  .current {
+    color: $primaryColor;
+    -webkit-text-stroke: 0.8px $primaryColor;
+    -webkit-text-fill-color: white;
+  }  
+  .header__mobile-end{
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    position: relative;
+    
+  @include tablet(){  
+      padding-top: 0;
+  }
+
+  }
+  .icon-tel {
+    fill: $svgColor;
+    transition: fill 150ms $actionFunction;
+
+    .tel-open:hover &, .tel-open:focus & {
+      fill:$primaryColor;
+    }
+  }
+  .tel-container {
+    position: absolute;
+    z-index: 2;
+  
+    top: 100%;
+    right: -25px;
+  
+    width: 192px;
+  
+    text-align: center;
+    overflow-y: scroll;
+    padding: 15px;
+      
+    opacity: 1;
+  
+    transition: opacity $actionTime $actionFunction,
+      visibility $actionTime $actionFunction;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      @include tablet(){
+        display: none;
+      }
+    }
+
+  .tel {
+    padding: 11px 3px;
+  
+    box-shadow: 1px 1px 25px 0px rgba(0, 0, 0, 0.15);
+  
+    background-color: #ffffff;
+    border-radius: 4px;
+
+    &::before{
+        content: "";
+        z-index: 1;
+    position: absolute;
+    bottom: calc(100% - 15px);
+    left: 50%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+  
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    }
+  }
+
+  .tel__link {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+    @include font(16, 20, 400, 0.01);
+    font-family: "Cera Pro";
+  
+    color: $textMainColor;
+
+    @include tablet(){
+      position: relative;
+    }
+    transition: color $actionTime $actionFunction;
+    &:hover, &:focus {
+      color: $primaryColor;
+    }
+
+  }
+  .tel-tablet-icon {
+    fill: $svgColor;
+    margin-right: 5px;
+
+    transition: fill $actionTime $actionFunction;
+    .tel__link:hover &, .tel__link:focus & {
+      fill: $primaryColor;
+    }
+  }
+   /* робота з мовами */
+  .lang-top {
+    margin-left: 28px;
+    position: relative;
+    text-transform: uppercase;
+
+    color: #bdbdbd;
+      
+    @include font(14, 18, 700, 0.01);
+    font-family: "Caviar Dreams", sans-serif;
+
+    @include tablet() {
+      margin: 0;
+    }
+  }
+
+  .lang-sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  
+    opacity: 1;
+    text-align: center;
+    
+    transition: opacity $actionTime $actionFunction,
+      visibility $actionTime $actionFunction;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+    }
+ 
+  .lang__link {
+    display: inline-block;
+    color: currentColor;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:hover, &:focus  {
+      -webkit-text-stroke: 0.8px rgba(43, 43, 43, 1);
+   }
+  }
+    
+.tel-tablet {
+  margin-left: 38px;
+  @media screen and (max-width: 767px) {
+       display: none;
+    }
+    @include desktop(){
+      margin-left: 118px;
+
+    }
+}
+.header-nav{
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}
+.header-nav__list {
+  display: flex;
+  gap: 56px;
+
+}
+.header-nav-serv {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    // transform: rotate(0deg);
+
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 4px solid $svgColor;
+    
+    .header-nav-serv:focus &, .header-nav-serv:hover & {
+      animation: rotate-hover .5s linear;
+    }
+  }
+
+  
+}
+.header-nav-sub {
+  opacity: 1;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+&.is-hidden {
+  opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+ }
+}
+
