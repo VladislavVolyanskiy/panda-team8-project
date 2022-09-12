@@ -59,13 +59,33 @@
 .contacts{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+
+    @media screen and (max-width: 767px) {
+        gap: 24px;
+    }
+    
+    @media screen and (min-width:768px) and (max-width:1439px){
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width:1440px) {
+        gap: 64px;
+    }
     &__list{
         list-style: none;
 
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        &--phone{
+            margin-right: 25px;
+        }
+
+        &--email{
+            margin-right: auto;
+        }
     }
 
     &__title{
@@ -85,4 +105,9 @@
 
         color: $text-color;
     }
+}
+
+.desktop{
+    display: flex;
+    flex-direction: row-reverse;
 }
