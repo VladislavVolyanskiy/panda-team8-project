@@ -1,0 +1,30 @@
+.video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+
+   
+    background-color: #000;
+    @media screen and (max-width: 767px) {
+    padding-bottom: 56.25%;
+    }
+    @include tablet {
+        width: 336px;
+        height: 261px; 
+    }
+    @include desktop {
+        width: 555px;
+        height: 315px;
+    }
+}
+.video__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
