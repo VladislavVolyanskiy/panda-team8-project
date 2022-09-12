@@ -30,6 +30,8 @@
 
 .loading-mobile {
   margin: 0 auto;
+  display: flex;
+
   @include tablet {
     display: none;
   }
@@ -40,14 +42,26 @@
 
 .loading-desctop {
   margin: 0 auto;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: block;
+  }
 }
 
 .grid-photos {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
   gap: 16px;
   @include tablet {
     gap: 32px;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   @include desktop {
     margin-bottom: 12px;
