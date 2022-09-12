@@ -3,6 +3,7 @@
 @import './common';
 @import "./reset";
 
+@import "./fonts";
 @import "./variables";
 @import "./placeholders";
 @import "./mixins";
@@ -10,6 +11,7 @@
 
 @import "./components/container";
 @import "./components/section";
+@import "./components/background";
 @import "./components/title";
 @import "./components/logo";
 @import "./components/button";
