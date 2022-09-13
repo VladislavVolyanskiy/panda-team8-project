@@ -1,37 +1,37 @@
-.hero {
-  &__list {
-    list-style: none;
+.hero-contact {
+  &__list{
+    @include tablet{
+        margin-left: 30px;
+    }
+    
   }
-  &__title {
-    font-family: 'Cera Pro';
-    font-weight: 700;
-    width: 100%;
 
-    color: $title-color;
-
+  &__title{
     margin-bottom: 16px;
-
-    @media screen and (max-width: 767px) {
-      font-size: 24px;
-      line-height: calc(30px / 24px);
-    }
-    @include tablet {
-      font-size: 36px;
-      line-height: calc(45px / 36px);
-    }
   }
-
   &__text {
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     color: $text-color;
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
+    @include desktop{
+        font-size: 18px;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }    
+}
+&__div-position{
+
+    @media  screen and (max-width:767px){
+        display: inline-block;
+    }
+    @media  screen and (min-width:768px){
+        display: flex;
     }
   }
-}
+}           
 .video {
   position: relative;
   width: 100%;
@@ -41,7 +41,7 @@
   background-color: #000;
 
   @media screen and (max-width: 767px) {
-    max-width: 280px;
+    min-width: 280px;
     height: 171px;
     margin-bottom: 16px;
     padding-bottom: 56.25%;
@@ -49,14 +49,14 @@
     @include centeredMarg;
   }
 
-  @include tablet {
-    max-width: 336px;
-    height: 261px;
-  }
-  @include desktop {
-    max-width: 555px;
-    height: 315px;
-  }
+    @include tablet {
+        min-width: 336px;
+        height: 261px;
+    }
+    @include desktop {
+        max-width: 555px;
+        height: 315px;
+    }
 }
 .video__item {
   position: absolute;

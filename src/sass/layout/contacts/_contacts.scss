@@ -1,25 +1,3 @@
-.hero {
-  &__title {
-    font-family: 'Cera Pro', cursive;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $title-color;
-
-    margin-bottom: 16px;
-  }
-
-  &__text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: $text-color;
-
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
-}
 
 .contacts {
   display: flex;
@@ -35,8 +13,9 @@
   }
 
   @media screen and (min-width: 1440px) {
-    gap: 64px;
+    gap: 68px;
   }
+  
   &__list {
     list-style: none;
 
@@ -45,11 +24,17 @@
     gap: 8px;
 
     &--phone {
-      margin-right: 25px;
+      @media screen and (min-width: 768px) and (max-width: 1439px){
+        margin-right: 25px;
+      }
+      
     }
 
-    &--email {
-      margin-right: auto;
+    &--email{
+      @media screen and (min-width: 768px) and (max-width: 1439px){
+        margin-right: 120px;
+      }
+      
     }
   }
 
@@ -66,10 +51,10 @@
 
     font-size: 16px;
     line-height: 20px;
-
-    color: $text-color;
+    margin-bottom: 18px;
   }
 }
+  
 
 .desktop {
   display: flex;

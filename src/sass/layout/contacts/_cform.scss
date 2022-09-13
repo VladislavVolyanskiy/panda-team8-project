@@ -8,12 +8,6 @@
     @include centeredMarg;
   }
   &__title {
-    font-family: 'Cera Pro';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $title-color;
-
     margin-bottom: 44px;
   }
 
@@ -42,17 +36,20 @@
     .cform__field:focus-within > & {
       transform: translateY(-20px);
     }
+    &__title{
+        margin-bottom: 44px;
+    }
   }
 
-  &__input {
+  &__input{
     width: 100%;
     border: none;
     border-bottom: 1px solid $title-color;
 
-    &:not(:placeholder-shown) + .cform__label {
-      transform: translateY(-20px);
+    &:not(:placeholder-shown) + .cform__label{
+        transform: translateY(-20px);
     }
-  }
+}
 
   &__textarea {
     resize: none;
@@ -62,10 +59,9 @@
 
     border: 1px solid #487996;
     border-radius: 50px 0px;
+    padding: 22px 20px;
 
-    &::placeholder {
-      padding: 22px 20px;
-    }
+
   }
 
   &__textarea-label {
@@ -87,5 +83,49 @@
       margin-right: 0;
       min-width: 177px;
     }
-  }
+}
+
+    &__textarea{
+        
+
+        resize: none;
+        padding: 22px 20px;
+
+        width: 100%;
+        height: 199px;
+
+        border: 1px solid #487996;
+        border-radius: 50px 0px;
+
+        position: relative;
+
+    }
+
+    &__textarea-label{
+        margin-bottom: 4px;
+    }
+
+    &__text{
+        color: $placeholder-color;
+    }
+
+    &__button{
+        display: block;
+        margin-top: 40px;
+        @extend %btn;
+        @include centeredMarg();
+
+        @include tablet{
+            margin-left: auto;
+            margin-right: 0;
+            min-width: 177px;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        bottom: 18px;
+        right: 18px;
+        
+    }   
 }
