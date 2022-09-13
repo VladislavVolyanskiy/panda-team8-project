@@ -4,21 +4,16 @@ body.no-scroll {
 .header {
     width: 100%;
     height: 60px;
-    margin-bottom: 40px;
     margin-top: 20px;
     position: relative;
     z-index: 3;
     &__mobile {
+      position: relative;
       @media screen and ( max-width: 1439px) {
         justify-content: space-between;
       }
         display: flex;
          align-items: center;   
-
-    }
-   
-    @include desktop() {
-      margin-top: 40px;  
     }
 }
 .link_logo {
@@ -136,16 +131,12 @@ body.no-scroll {
   @include tablet(){
     
       width: 768px;
-      // width: 100%;
       height: 100vw;
-      // top: 115px;
       top: 0;
-      // left: 0;
-      // top: 71px;
       left: 50%;
       transform: translateX(-50%);
      
-      padding-top: 125;
+      padding-top: 125px;
       background-image: url('../images/background/tab-main-1x.jpg');
     //   @include retina(){
     //     background-image: url('../images/background/tab-menu-2x.jpg');
@@ -225,7 +216,7 @@ body.no-scroll {
 }
   .current {
     color: $primaryColor;
-    -webkit-text-stroke: 0.3px $primaryColor;
+    -webkit-text-stroke: 0.5px $primaryColor;
     -webkit-text-fill-color: white;
   }  
   .header__end{
@@ -417,6 +408,7 @@ body.no-scroll {
     border-top: 4px solid $svgColor;
 
     transition: transform $actionTime $actionFunction;
+
    }
  &:hover::after, &:focus::after {
   transform: translateY(-50%) rotate(180deg);
@@ -437,7 +429,7 @@ body.no-scroll {
 
   transition: opacity $actionTime $actionFunction;
 
-  .header-nav-serv:focus &, .header-nav-serv:hover & {
+  .header-nav-serv:focus &, .header-nav-serv:hover &{
     opacity: 1;
   }
 
