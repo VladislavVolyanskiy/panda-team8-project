@@ -1,47 +1,47 @@
 // @import './example';
 
 @import './common';
-@import "./reset";
+@import './reset';
 
-@import "./fonts";
-@import "./variables";
-@import "./placeholders";
-@import "./mixins";
-@import "./hidden";
+// @import "./fonts";
+@import './variables';
+@import './placeholders';
+@import './mixins';
+@import './hidden';
 
-@import "./components/container";
-@import "./components/section";
-@import "./components/background";
-@import "./components/title";
-@import "./components/logo";
-@import "./components/button";
-@import "./components/transitions";
-@import "./components/modal";
-@import "./components/mobile-menu";
-@import "./components/background";
+@import './components/container';
+@import './components/section';
+@import './components/background';
+@import './components/title';
+@import './components/logo';
+@import './components/button';
+@import './components/transitions';
+@import './components/modal';
+@import './components/mobile-menu';
+@import './components/background';
 
-@import "./layout/header";
+@import './layout/header';
 
-@import "./layout/main/hero";
-@import "./layout/main/gallery";
-@import "./layout/main/morephoto";
+@import './layout/main/hero';
+@import './layout/main/gallery';
+@import './layout/main/morephoto';
 
-@import "./layout/3dmodel/hero";
-@import "./layout/3dmodel/methods";
-@import "./layout/3dmodel/wecreate";
+@import './layout/3dmodel/hero';
+@import './layout/3dmodel/methods';
+@import './layout/3dmodel/wecreate';
 
-@import "./layout/3dscan/hero";
-@import "./layout/3dscan/scanprocess";
+@import './layout/3dscan/hero';
+@import './layout/3dscan/scanprocess';
 
-@import "./layout/3dprint/examlpes";
-@import "./layout/3dprint/description";
+@import './layout/3dprint/examlpes';
+@import './layout/3dprint/description';
 
-@import "./layout/order/hero";
-@import "./layout/order/ordform";
-@import "./layout/order/ordcontacts";
+@import './layout/order/hero';
+@import './layout/order/ordform';
+@import './layout/order/ordcontacts';
 
-@import "./layout/contacts/hero";
-@import "./layout/contacts/contacts";
-@import "./layout/contacts/cform";
+@import './layout/contacts/hero';
+@import './layout/contacts/contacts';
+@import './layout/contacts/cform';
 
-@import "./layout/footer";
+@import './layout/footer';
