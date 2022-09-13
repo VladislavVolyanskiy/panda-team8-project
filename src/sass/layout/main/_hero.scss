@@ -1,3 +1,20 @@
+.container {
+  position: relative;
+}
+.anchor {
+  display: none;
+  position: absolute;
+  @include tablet {
+    display: block;
+    top: 205px;
+    left: 135px;
+  }
+  @include desktop {
+    display: block;
+    top: 505px;
+    left: 235px;
+  }
+}
 .main-hero__title {
   @include font(18, 21, 400, null);
   font-style: normal;
@@ -60,13 +77,4 @@
   @include desktop {
     @include font(36, 42, 400, null);
   }
-}
-
-.container {
-  position: relative;
-}
-.anchor {
-  position: absolute;
-  top: 325px;
-  left: 195px;
 }
