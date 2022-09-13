@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "panda-team8-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://1vladislavvolyanskiy.github.io/panda-team8-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /panda-team8-project/"
   },
   "repository": {
     "type": "git",
