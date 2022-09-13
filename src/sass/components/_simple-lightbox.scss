@@ -223,14 +223,8 @@ body.hidden-scroll {
   transition: transform ease 200ms;
 }
 
-.sl-total,
-.sl-current,
 .sl-wrapper .sl-counter {
-  display: none;
-}
-
-.sl-wrapper .sl-counter {
-  color: rgba(43, 43, 43, 0.8);
+  color: #ffffff;
 }
 
 @-webkit-keyframes pulsate {
