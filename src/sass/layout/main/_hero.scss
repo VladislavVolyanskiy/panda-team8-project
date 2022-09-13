@@ -1,63 +1,72 @@
 .main-hero__title {
+  @include font(18, 21, 400, null);
+  font-style: normal;
+  text-align: center;
+  width: 280px;
+  color: $text-color;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  @include tablet {
+    @include font(24, 28, 400, null);
+    margin-bottom: 60px;
+    width: 336px;
+  }
+  @include desktop {
+    @include font(48, 56, 400, null);
+    width: 630px;
+  }
+}
+
+.main-hero__list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+  @include tablet {
+    gap: 29px;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
+}
+.main-hero__img {
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+}
+
+.main-hero__img-first {
+  border-top-right-radius: 35px;
+}
+
+.main-hero__img-second {
+  border-radius: 100px;
+}
+
+.main-hero__img-third {
+  border-radius: 0 25px 0 25px;
+}
+
+.main-hero__text {
+  @include font(16, 19, 400, null);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $text-color;
+  @include tablet {
     @include font(18, 21, 400, null);
-    font-style: normal;
-    text-align: center;
-    width: 280px;
-    color: $text-color;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    @include tablet {
-        @include font(24, 28, 400, null);
-        margin-bottom: 60px;
-        width: 336px;
-    }
-    @include desktop {
-        @include font(48, 56, 400, null);
-        width: 630px;
-    }
   }
-  
-  .main-hero__list {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 20px;
-    @include tablet {
-        gap: 29px;
-        margin-bottom: 60px;
-    }
-    @include desktop {
-        gap:32px;
-    }
+  @include desktop {
+    @include font(36, 42, 400, null);
   }
-  .main-hero__img{
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
-  }
-  
-  .main-hero__img-first {
-    border-top-right-radius: 35px;
-  }
-  
-  .main-hero__img-second {
-    border-radius: 100px;
-  }
-  
-  .main-hero__img-third {
-    border-radius: 0 25px 0 25px;
-  }
-  
-  .main-hero__text {
-    @include font(16, 19, 400, null);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: $text-color;
-    @include tablet {
-        @include font(18, 21, 400, null)
-    }
-    @include desktop{
-        @include font (36, 42, 400, null)
-    }
-  }
+}
+
+.container {
+  position: relative;
+}
+.anchor {
+  position: absolute;
+  top: 325px;
+  left: 195px;
+}
