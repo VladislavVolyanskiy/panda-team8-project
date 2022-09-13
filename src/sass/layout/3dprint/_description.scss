@@ -1,7 +1,10 @@
 .process__item {
   display: flex;
   @media screen and (min-width: 768px) {
-    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
   }
 }
 
@@ -45,9 +48,13 @@
 .btn {
   @extend %btn;
   margin-top: 6px;
+  margin-left: 0;
   margin-bottom: 55px;
   @media screen and (min-width: 768px) {
-    margin-left: 0;
+    margin-top: 38;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 32;
   }
 }
 
