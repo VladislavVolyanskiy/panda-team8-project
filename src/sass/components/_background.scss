@@ -1,0 +1,47 @@
+.main-background{
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: inherit;
+    @include mobile(){
+        background-image: url(../images/background/mob-scan-1x.jpg);
+    }
+    @include tablet(){
+        background-image: url(../images/background/tab-main-1x.jpg);
+    }
+    @include desktop(){
+        background-image: url(../images/background/desk-main-1x.jpg);
+    }
+}
+
+.scan-background{    
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: inherit;
+    @include mobile(){
+        background-image: url(../images/background/mob-scan-1x.jpg);
+    }
+    @include tablet(){
+        background-image: url(../images/background/tab-scan-1x.jpg);
+    }
+    @include desktop(){
+        background-image: url(../images/background/desk-scan-1x.jpg);
+    }
+}
+
+.print-background{
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: inherit;
+    @include mobile(){
+        background-image: url(../images/background/mob-scan-1x.jpg);
+    }
+    @include tablet(){
+        background-image: url(../images/background/tab-print-1x.jpg);
+    }
+    @include desktop(){
+        background-image: url(../images/background/desk-print-1x.jpg);
+    }
+}
