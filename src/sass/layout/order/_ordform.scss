@@ -212,6 +212,22 @@
     color: #ffffff;
 }
 
+.button {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        height: 56px;
+    }
+
+    ;
+
+    @media screen and (min-width: 1440px) {
+        width: 555px;
+        height: 56px;
+    }
+}
+
 .order__btn {
     width: 100%;
     @extend %btn;
@@ -219,14 +235,12 @@
     @media screen and (min-width: 768px) {
         width: 177px;
         position: absolute;
-        top: 105%;
-        right: 155px;
+        right: 0
     }
 
     @media screen and (min-width: 1440px) {
-        width: 177px;
+
         position: absolute;
-        bottom: 0;
         right: 0;
     }
 }

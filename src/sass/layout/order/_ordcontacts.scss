@@ -5,13 +5,34 @@
     @media screen and (min-width: 1440px) {
         text-align: right;
         font-size: 36px;
+        margin-bottom: 18px;
     }
 }
 
-.contact__list {
-    margin-bottom: 24px;
+.contact__item {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.11;
+    color: #2B2B2B;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        ;
+    }
 }
 
+.contact__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 18px;
+    }
+
+    ;
+
+}
 .contact__link {
     font-family: "Cera Pro";
     font-style: normal;
@@ -27,14 +48,25 @@
 
 .email-wrap {
     margin-bottom: 24px;
-}
+    @media screen and (min-width: 1440px) {
+            margin-bottom: 30px;
+        }
+    
+        ;
+    }
 
 .tel-wrap {
     margin-bottom: 24px;
+    @media screen and (min-width: 1440px) {
+            margin-bottom: 30px;
+        }
+    
+        ;
+
 }
 
 .time__item {
-    font-family: "Montserrat Alternates";
+    font-family: "Cera Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -44,7 +76,13 @@
             font-size: 18px;
         }
 }
+.time__item:not(:last-child) {
+    margin-bottom: 8px;
 
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 18px;
+    };
+}
 .oconnect_wrap {
     @media screen and (min-width: 768px) {
         display: flex;
