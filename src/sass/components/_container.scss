@@ -16,11 +16,15 @@
     width: 1376px;
   }
 
-  &--flex{
+  &--contacts{
+    @media screen and (max-width:1439px){
+      padding-bottom: 60px;
+    }
     @media screen and (min-width:1440px){
       display: flex;
       flex-direction: row-reverse;
-    }
-    
+
+      padding: 0px 149px 80px 149px;
+    } 
   }
 }

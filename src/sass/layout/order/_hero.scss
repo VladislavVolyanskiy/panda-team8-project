@@ -25,6 +25,7 @@
         @media screen and (min-width: 1440px) {
             text-align: left;
             font-size: 48px;
+            margin-bottom: 24px;
         };
     }
 
@@ -62,7 +63,6 @@
 
     &__list {
         width: 100%;
-        margin: 0;
     }
 }
 
