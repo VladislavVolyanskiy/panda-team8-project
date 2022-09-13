@@ -1,36 +1,38 @@
-.hero {
-    
+.hero-contact {    
     &__list{
-        list-style: none;
-    }
-    &__title{
-        font-family: 'Comic Neue', cursive;
-        font-weight: 700;
-        width: 100%;
-        
-        color: $title-color;
-
-        margin-bottom: 16px;
-
-        @media  screen and (max-width:767px) {
-            font-size: 24px;
-            line-height: calc(30px/24px);   
-        }
         @include tablet{
-            font-size: 36px;
-            line-height: calc(45px/36px);
+            margin-left: 30px;
         }
+        
+    }
+
+    &__title{
+        margin-bottom: 16px;
     }
 
     &__text {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         color: $text-color;
+
+        @include desktop{
+            font-size: 18px;
+        }
 
         &:not(:last-child){
             margin-bottom: 16px;
+        }    
+    }
+    &__div-position{
+
+        @media  screen and (max-width:767px){
+            display: inline-block;
         }
+        @media  screen and (min-width:768px){
+            display: flex;
+        }
+        
     }
 }
 .video {
@@ -51,7 +53,7 @@
     }
 
     @include tablet {
-        max-width: 336px;
+        min-width: 336px;
         height: 261px;
     }
     @include desktop {
