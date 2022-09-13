@@ -1,28 +1,25 @@
-
-
 .creation__model-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 16px;
-
+  margin-bottom: ;
 }
 
 .creation__model-item {
-  width: calc((100% - 20px)/2);
+  width: calc((100% - 20px) / 2);
 }
 
 .creation__model-item:nth-child(odd) {
-    border-radius: 0px 0px 0px 50px;
-    overflow: hidden;
+  border-radius: 0px 0px 0px 50px;
+  overflow: hidden;
 }
 
 .creation__model-item:nth-child(even) {
-    border-radius: 50px 0px;
-    overflow: hidden;
+  border-radius: 50px 0px;
+  overflow: hidden;
 }
-
 
 .btn {
   @extend %btn;
