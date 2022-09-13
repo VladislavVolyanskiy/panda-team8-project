@@ -65,10 +65,8 @@
 
     border: 1px solid #487996;
     border-radius: 50px 0px;
+    padding: 22px 20px;
 
-    &::placeholder {
-      padding: 22px 20px;
-    }
   }
 
   &__textarea-label {
