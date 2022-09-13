@@ -1,0 +1,138 @@
+.more-photos-section {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 80px;
+    padding-top: 30px;
+  }
+  @include desktop {
+    padding-bottom: 100px;
+    padding-top: 60px;
+  }
+}
+
+.more-photos-header {
+  margin-bottom: 16px;
+  font-family: 'Cera Pro';
+  color: #487996;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  @include desktop {
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
+}
+
+.loading-mobile {
+  margin: 0 auto;
+  display: flex;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.loading-desctop {
+  margin: 0 auto;
+  display: none;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: block;
+  }
+}
+
+.grid-photos {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  @include tablet {
+    gap: 32px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @include desktop {
+    margin-bottom: 12px;
+  }
+}
+
+.section-photos-block {
+  @include desktop {
+    width: 1142px;
+    margin: 0 auto;
+  }
+}
+
+.grid-photos__picture {
+  width: 100%;
+}
+
+.grid-photos__item:nth-child(n + 4) {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+  }
+}
+
+.section-photos-block {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+// // ----------------- modal ----------------- //
+// .gallery-modal {
+//   position: fixed;
+//   display: none;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(43, 43, 43, 0.8);
+//   height: 100%;
+//   width: 100%;
+//   z-index: 100;
+// }
+
+// .gallery-modal span {
+//   position: absolute;
+//   top: 0;
+//   right: 20px;
+//   font-size: 40px;
+//   font-weight: bolder;
+//   color: white;
+//   cursor: pointer;
+//   z-index: 100;
+// }
+
+// .gallery-modal img {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   max-width: calc(100% - 42px);
+//   object-fit: cover;
+
+//   @include tablet {
+//     width: 95%;
+//   }
+//   @include desktop {
+//     width: calc(100% * 2);
+//   }
+// }

@@ -1,0 +1,87 @@
+.gallery-section {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @include tablet {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  @include desktop {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+.gallery-header {
+  margin-bottom: 16px;
+  font-family: 'Cera Pro';
+  color: #487996;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+  @include desktop {
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
+}
+
+.section-gallery-block {
+  @include desktop {
+    width: 1142px;
+    margin: 0 auto;
+  }
+}
+
+.gallery__picture {
+  width: 100%;
+}
+
+.grid-gallery__item {
+  @include mobile {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include tablet {
+    width: 336px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  @include desktop {
+    width: 555px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.grid-gallery {
+  margin-bottom: 40px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+}
+
+.gallery__description {
+  margin-top: 8px;
+  font-family: 'Cera Pro';
+  color: #487996;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  @include tablet {
+    margin-top: 16px;
+  }
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.27;
+  }
+}
