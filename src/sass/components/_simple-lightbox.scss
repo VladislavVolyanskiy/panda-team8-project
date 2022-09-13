@@ -223,10 +223,8 @@ body.hidden-scroll {
   transition: transform ease 200ms;
 }
 
-.sl-total,
-.sl-current,
 .sl-wrapper .sl-counter {
-  display: none;
+  color: #ffffff;
 }
 
 @-webkit-keyframes pulsate {
