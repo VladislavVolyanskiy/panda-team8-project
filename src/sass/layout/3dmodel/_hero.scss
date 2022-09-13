@@ -1,0 +1,20 @@
+.model-hero__title {
+    margin-bottom: 16px;
+}
+
+.model-hero__text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+    @include desktop {
+        flex-wrap: nowrap;
+        gap: 72px;
+    }
+}
+
+.model-hero__text {
+    // flex-basis: 50%;
+}
+
+
