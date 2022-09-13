@@ -1,20 +1,48 @@
 .order__subtitle {
-    font-family: 'Cera Pro';
+    font-family: "Cera Pro";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 
     color: #487996;
+@media screen and (min-width: 768px){
+    font-size: 24px;
+}
+    @media screen and (min-width: 1440px) {
+        text-align: left;
+        font-size: 36px;
+    }
 }
 
 .order__form {
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 120px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 555px;
+    }
 }
 
 .first-subtittle {
     margin-top: 40px;
     margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 0;
+        font-size: 36px;
+    }
 
 }
 
@@ -25,11 +53,15 @@
     line-height: 1.25;
 
     color: #2B2B2B;
+    @media screen and (min-width: 1440px){
+        font-size: 18px;
+    }
 }
 
 .connect__field {
     width: 100%;
-    margin-bottom: 44px;
+    height: 20px;
+    padding: 0;
     outline: transparent;
     display: block;
     border: none;
@@ -41,6 +73,16 @@
 .connect__field:focus {
     border-bottom: 1px solid #008CEF;
 
+}
+
+.connect__field:focus+.connect__name,
+.connect__field:not(:placeholder-shown)+.connect__name {
+    transform: translateY(-40px);
+}
+
+.connect__field:focus+.connect__email,
+.connect__field:not(:placeholder-shown)+.connect__email {
+    transform: translateY(-40px);
 }
 
 .connect__view {
@@ -57,6 +99,8 @@
 }
 
 .connect__featback {
+    position: relative;
+    padding: 22px 20px;
     margin-bottom: 4px;
     display: block;
     outline: transparent;
@@ -73,43 +117,63 @@
 }
 
 .connect__featback::placeholder {
-    padding: 22px 0px 22px 20px;
-    font-family: 'Cera Pro';
+    font-family: "Cera Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
 
     color: #CDCDCD;
+    @media screen and (min-width: 1440px){
+        font-size: 18px;
+    }
 }
 
 .connect__footnote {
     width: 280px;
-    font-family: 'Cera Pro';
+    margin-bottom: 40px;
+    font-family: "Cera Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
 
     color: #CDCDCD;
+    @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
 }
 
 
 .form-field {
-    position: relative;
     margin-bottom: 44px;
 }
 
 .connect__name,
 .connect__email {
-    position: absolute;
-    font-family: 'Cera Pro';
+    transform: translateY(-20px);
+    margin-bottom: 32px;
+    display: block;
+    font-family: "Cera Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2B2B2B;
+    @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
+}
+
+.connect__textarea {
+    display: block;
+    font-family: "Cera Pro";
+    color: #2B2B2B;
+    margin-bottom: 4px;
+    @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
 }
 
 .connect__message {
@@ -125,20 +189,59 @@
     }
 }
 
+.otextarea-wrap {
+    position: relative;
+}
+
 .connect__icon {
-    fill:#000;
     position: absolute;
     top: 0;
     right: 0;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.connect__clip {
+    position: absolute;
+    display: block;
+    bottom: 18px;
+    right: 19px;
+}
 
 .connect__select:hover {
     background-color: rgba(72, 121, 150, 0.5);
     color: #ffffff;
 }
 
-// .order__btn {
+.order__btn {
+    width: 100%;
+    @extend %btn;
 
-// }
+    @media screen and (min-width: 768px) {
+        width: 177px;
+        position: absolute;
+        top: 105%;
+        right: 155px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 177px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.connect__file {
+    display: none;
+}
+
+.odecktopconnect-wrap {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.oform-wrap {
+    position: relative;
+}

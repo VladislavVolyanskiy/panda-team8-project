@@ -1,6 +1,11 @@
 .other-subtittle {
     margin-top: 0px;
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1440px) {
+        text-align: right;
+        font-size: 36px;
+    }
 }
 
 .contact__list {
@@ -8,13 +13,16 @@
 }
 
 .contact__link {
-    font-family: 'Cera Pro';
+    font-family: "Cera Pro";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25px;
 
     color: #2B2B2B;
+    @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
 }
 
 .email-wrap {
@@ -26,10 +34,43 @@
 }
 
 .time__item {
-    font-family: 'Cera Pro';
+    font-family: "Montserrat Alternates";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: #2B2B2B;
+    @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
+}
+
+.oconnect_wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1440px) {
+        text-align: right;
+    }
+}
+
+
+.group {
+    display: none;
+
+    @media screen and (min-width: 1440px) {
+        display: block;
+        width: 530px;
+        height: 325px;
+
+        background-image: url(/src/images/orderpic4-desk-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/src/images/orderpic4-desk-2x.png);
+        }
+    }
 }

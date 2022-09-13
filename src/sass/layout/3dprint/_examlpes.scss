@@ -1,26 +1,7 @@
-.containerd {
-  width: 100%;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    max-width: 1440px;
-  }
-}
 .examples {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .examples__title {
+  font-family: 'Cera Pro';
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -29,18 +10,29 @@
 }
 .examples__list {
   display: flex;
+
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
-  @media screen and (min-width: 480px) {
-  }
+
   @media screen and (min-width: 768px) {
     gap: 32px;
   }
 }
 
+.examples__list .examples__wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
 .examples__item {
   position: relative;
+  z-index: 1;
   width: 130px;
   height: 158px;
   display: flex;
@@ -59,15 +51,6 @@
     width: 320px;
     height: 382px;
   }
-}
-
-.examples__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
 }
 .examples__text {
   font-weight: 400;
