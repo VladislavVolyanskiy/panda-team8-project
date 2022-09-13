@@ -314,5 +314,49 @@
         </svg>
       </div>
     </div>
+    <!-- <div class="gallery-modal">
+      <span>&times;</span>
+      <picture>
+        <source
+          srcset="
+            ./images/more-photo1-desk-1x.jpg 1x,
+            ./images/more-photo1-desk-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./images/more-photo1-tab-1x.jpg 1x,
+            ./images/more-photo1-tab-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/more-photo1-mob-1x.jpg 1x,
+            ./images/more-photo1-mob-2x.jpg 2x
+          "
+          media="(min-width: 480px)"
+        />
+        <img
+          class="grid-photos__picture"
+          src="./images/more-photo1-desk-1x.jpg"
+          alt=""
+        />
+      </picture>
+    </div>
   </div>
+  <script>
+    document.querySelectorAll('.grid-photos__item img').forEach(image => {
+      image.onclick = () => {
+        document.querySelector('.gallery-modal').style.display = 'block';
+        document.querySelector('.gallery-modal img').src =
+          image.getAttribute('src');
+      };
+    });
+
+    document.querySelector('.gallery-modal span').onclick = () => {
+      document.querySelector('.gallery-modal').style.display = 'none';
+    };
+  </script> -->
 </section>
