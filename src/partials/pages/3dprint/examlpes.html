@@ -4,12 +4,31 @@
     <ul class="examples__list list">
       <li class="examples__item">
         <div class="examples__wrapper">
-          <img
-            src="/src/images/wecreate1-mob-1x.png"
-            alt="прототип деталі"
-            width="90"
-            height="75"
-          />
+          <picture class="examples__picture">
+            <source
+              srcset="
+                /src/images/wecreate1-desk-1x.png 1x,
+                /src/images/wecreate1-desk-2x.png 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                /src/images/wecreate1-tab-1x.png 1x,
+                /src/images/wecreate1-tab-2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /src/images/wecreate1-mob-1x.png 1x,
+                /src/images/wecreate1-mob-2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img src="/src/images/wecreate1-mob-1x.png" alt="прототип деталі" />
+          </picture>
+
           <p class="examples__text">прототипи</p>
         </div>
       </li>
@@ -37,12 +56,7 @@
               "
               media="(max-width: 767px)"
             />
-            <img
-              src="/src/images/wecreate2-mob-1x.png"
-              alt="макет"
-              width="102"
-              height="64"
-            />
+            <img src="/src/images/wecreate2-mob-1x.png" alt="макет" />
           </picture>
 
           <p class="examples__text">макети</p>
@@ -72,12 +86,7 @@
               "
               media="(max-width: 767px)"
             />
-            <img
-              src="/src/images/wecreate3-mob-1x.png"
-              alt="декор ваза"
-              width="44"
-              height="71"
-            />
+            <img src="/src/images/wecreate3-mob-1x.png" alt="декор ваза" />
           </picture>
 
           <p class="examples__text">декор</p>
@@ -107,14 +116,8 @@
               "
               media="(max-width: 767px)"
             />
-            <img
-              src="/src/images/wecreate4-mob-1x.png"
-              alt="3d куб"
-              width="85"
-              height="87"
-            />
+            <img src="/src/images/wecreate4-mob-1x.png" alt="3d куб" />
           </picture>
-
           <p class="examples__text">корпоративний дизайн</p>
         </div>
       </li>

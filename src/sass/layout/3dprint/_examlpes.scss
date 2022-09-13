@@ -1,5 +1,3 @@
-.examples {
-}
 .examples__title {
   font-family: 'Cera Pro';
   font-weight: 700;
@@ -7,14 +5,20 @@
   line-height: 30px;
   color: $title-color;
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 .examples__list {
   display: flex;
-
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
-
   @media screen and (min-width: 768px) {
     gap: 32px;
   }
@@ -26,13 +30,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   position: absolute;
   z-index: 2;
 }
 
+.examples__picture img {
+  @media screen and (min-width: 1440px) {
+    max-width: 240px;
+  }
+}
+
 .examples__item {
   position: relative;
-  z-index: 1;
   width: 130px;
   height: 158px;
   display: flex;
