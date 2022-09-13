@@ -80,6 +80,10 @@
   width: 100%;
 }
 
+.grid-photos__item {
+  // max-width: 182px;
+}
+
 .grid-photos__item:nth-child(n + 4) {
   display: none;
   @include tablet {
