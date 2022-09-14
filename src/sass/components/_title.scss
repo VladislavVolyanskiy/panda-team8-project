@@ -16,11 +16,11 @@
   @include font(18, 23, 700, 0.03);
   text-transform: uppercase;
   color: $title-color;
-    @include tablet {
-        @include font(24, 30, 700, 0.03);
-      }
-    
-    @include desktop {
-      @include font(36, 45, 700, 0.03);
-    }
+  @include tablet {
+    @include font(24, 30, 700, 0.03);
+  }
+
+  @include desktop {
+    @include font(36, 45, 700, 0.03);
+  }
 }

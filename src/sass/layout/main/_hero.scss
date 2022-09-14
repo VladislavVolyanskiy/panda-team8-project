@@ -16,6 +16,7 @@
   }
 }
 .main-hero__title {
+  font-family: 'Caviar Dreams';
   @include font(18, 21, 400, null);
   font-style: normal;
   text-align: center;
@@ -65,6 +66,7 @@
 }
 
 .main-hero__text {
+  font-family: 'Caviar Dreams';
   @include font(16, 19, 400, null);
   font-weight: 400;
   font-size: 16px;

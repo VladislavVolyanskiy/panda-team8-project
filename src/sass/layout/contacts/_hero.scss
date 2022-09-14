@@ -1,3 +1,4 @@
+
 .hero {
   @include desktop {
       padding-left: 149px;
@@ -19,7 +20,10 @@
 
     color: $title-color;
 
+
+  &__title{
     margin-bottom: 16px;
+
     @include desktop {
       margin-bottom: 24px;
     }
@@ -74,6 +78,7 @@
     }
   }
 
+
 .video {
   position: relative;
   width: 100%;
@@ -83,13 +88,16 @@
   background-color: #000;
 
   @media screen and (max-width: 767px) {
+
     width: 280px;
+
     height: 171px;
     margin-bottom: 16px;
     padding-bottom: 56.25%;
 
     @include centeredMarg;
   }
+
   @media screen and (min-width:320px) and (max-width:767px) {
     padding-bottom: 38.867%; 
   }
@@ -102,6 +110,7 @@
     min-width: 555px;
     height: 315px;
   }
+
 }
 .video__item {
   position: absolute;

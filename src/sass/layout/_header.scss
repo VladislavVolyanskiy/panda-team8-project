@@ -4,29 +4,28 @@ body.no-scroll {
 .header {
     width: 100%;
     height: 60px;
-    margin-bottom: 40px;
     margin-top: 20px;
     position: relative;
     z-index: 3;
     &__mobile {
+      position: relative;
       @media screen and ( max-width: 1439px) {
         justify-content: space-between;
       }
         display: flex;
          align-items: center;   
-
     }
-    @include desktop {
-      margin-top: 40px;      
-    }
+}
+.link_logo {
+  transform: scale(1);
+  transition: transform 500ms $actionFunction;
+  &:hover{
+    transform: scale(1.3);
   }
-  .link_logo {
-    transform: scale(1);
-    transition: transform 500ms $actionFunction;
-    &:hover{
-      transform: scale(1.3);
-    }
+  @include tablet(){
+    z-index: 100;
   }
+}
   .logo {
     display: block;
     width: 101px;
@@ -38,6 +37,7 @@ body.no-scroll {
         width: 125px;
         height: 31px;
         margin-top: 0;
+        z-index: 3;
     }
     @include desktop(){
       width: 192px;
@@ -60,6 +60,7 @@ body.no-scroll {
       
         transform: translate(-50%, -50%);
       }
+      z-index: 4;
       .header__end & {
         @include tablet(){
           display: none;
@@ -108,7 +109,7 @@ body.no-scroll {
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: inherit;
     background-image: url(../images/background/mob-menu-1x.jpg);
       
     position: fixed;
@@ -122,26 +123,25 @@ body.no-scroll {
     overflow-y: scroll;
   
     opacity: 1;
-    padding-top: 60px;
+    padding-top: 50px;
   
     transition: opacity 500ms $actionFunction,
     visibility 500ms $actionFunction;
 
   @include tablet(){
-
-      // width: 380px;
-      width: 767px;
-
-      height: 100%;
-      // top: 115px;
-      top: 70px;
+    
+      width: 768px;
+      height: 100vw;
+      top: 0;
       left: 50%;
       transform: translateX(-50%);
-
-      // padding-top: 0;
-      padding-top: 65;
-      background-image: url(../images/background/tab-menu-1x.jpg);
-  }
+     
+      padding-top: 125px;
+      background-image: url('../images/background/tab-main-1x.jpg');
+    //   @include retina(){
+    //     background-image: url('../images/background/tab-menu-2x.jpg');
+    //   }
+     }
     &.is-hidden {
       opacity: 0;
       visibility: hidden;
@@ -150,8 +150,7 @@ body.no-scroll {
     @include desktop(){
       display: none;
     }
-  } 
-  
+  }   
   .mobile-nav {
     @include centeredMarg();
     display: block;
@@ -162,7 +161,7 @@ body.no-scroll {
     padding-bottom: 12px;
   
     @include font(24, 30, 700, null);
-    font-family: "Cera Pro";
+    font-family: $titleFont;
     text-transform: uppercase;
   
     color: $primaryColor;
@@ -173,7 +172,7 @@ body.no-scroll {
     padding-bottom: 12px;
   
     @include font(24, 30, 700, null);
-    font-family: "Cera Pro";
+    font-family: $titleFont;
     text-transform: uppercase;
   
     color: $primaryColor;
@@ -191,7 +190,7 @@ body.no-scroll {
     padding-bottom: 12px;    
 
     @include font(24, 30, 500, null);
-    font-family: "Cera Pro";
+    font-family: $titleFont;
     text-align: center;
   
     color: $primaryColor;
@@ -212,14 +211,20 @@ body.no-scroll {
       
         background-color: $primaryColor;
         border-radius: 3px 0px;
-       
+         
   }
-}
-  .current {
+ }
+  .mobile-nav-sub__link.current {
     color: $primaryColor;
-    -webkit-text-stroke: 0.8px $primaryColor;
+    -webkit-text-stroke: 0.5px $primaryColor;
     -webkit-text-fill-color: white;
   }  
+  .mobile-nav__link.current {
+    color: $primaryColor;
+    -webkit-text-stroke: 0.05px $primaryColor;
+    -webkit-text-fill-color: white;
+  }  
+
   .header__end{
     display: flex;
     align-items: center;
@@ -299,12 +304,13 @@ body.no-scroll {
     padding-bottom: 5px;
   
     @include font(16, 20, 400, 0.01);
-    font-family: "Cera Pro";
+    font-family: $titleFont;
   
     color: $textMainColor;
 
     @include tablet(){
       position: relative;
+      z-index: 4;
     }
     transition: color $actionTime $actionFunction;
     &:hover, &:focus {
@@ -315,7 +321,7 @@ body.no-scroll {
   .tel-tablet-icon {
     fill: $svgColor;
     margin-right: 5px;
-
+    z-index: 4;
     transition: fill $actionTime $actionFunction;
     .tel__link:hover &, .tel__link:focus & {
       fill: $primaryColor;
@@ -328,37 +334,32 @@ body.no-scroll {
     text-transform: uppercase;
 
     color: #bdbdbd;
+    background-color: transparent;
       
     @include font(14, 18, 700, 0.01);
-    font-family: "Caviar Dreams", sans-serif;
+    font-family: $titleFont, sans-serif;
 
     @include tablet() {
       margin: 0;
+      z-index: 4;
     }
   }
 
   .lang-sub {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -2px;
   
-    display: block;
+    opacity: 0;
     text-align: center;
     
-    transition: opacity $actionTime $actionFunction,
-      visibility $actionTime $actionFunction;
-
-    // &.is-hidden {
-    //     opacity: 0;
-    //     visibility: hidden;
-    //     pointer-events: none;
-    //   }
-      .lang__link:hover &, .lang__link:focus &{
-        display: block;
-
+    transition: opacity $actionTime $actionFunction;
+    
+      .lang-hover:hover &, .lang-hover:focus &{
+        opacity: 1;
       }
     }
- 
+
   .lang__link {
     display: inline-block;
     color: currentColor;
@@ -366,7 +367,7 @@ body.no-scroll {
     padding-bottom: 5px;
 
     &:hover, &:focus  {
-      -webkit-text-stroke: 0.8px rgba(43, 43, 43, 1);
+      -webkit-text-stroke: 0.1px rgba(43, 43, 43, 1);
    }
   }
     
@@ -382,7 +383,7 @@ body.no-scroll {
     }
 }
 .header-nav{
-  margin-left: 278px;
+  margin-left: 268px;
   @media screen and (max-width: 1439px) {
     display: none;
   }
@@ -392,9 +393,9 @@ body.no-scroll {
   gap: 56px;
 
   @include font(18, 21, 400, 0.01);
-  font-family: 'Caviar Dreams';
+  font-family: $headerNavFont;
  
-color: $textMainColor;
+ color: $textMainColor;
 
 }
 .header-nav-serv {
@@ -413,8 +414,8 @@ color: $textMainColor;
     border-top: 4px solid $svgColor;
 
     transition: transform $actionTime $actionFunction;
-   
-  }
+
+   }
  &:hover::after, &:focus::after {
   transform: translateY(-50%) rotate(180deg);
  }
@@ -434,12 +435,12 @@ color: $textMainColor;
 
   transition: opacity $actionTime $actionFunction;
 
-  .header-nav-serv:focus &, .header-nav-serv:hover & {
+  .header-nav-serv:focus &, .header-nav-serv:hover &{
     opacity: 1;
   }
 
 }
-.header-nav__link, .header-nav-serv__link{
+.header-nav__link, .header-nav-sub__link{
   color: $textMainColor;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -451,7 +452,7 @@ color: $textMainColor;
   }
   
 }
-.header-nav-serv__link {
+.header-nav-sub__link {
   padding-top: 2px;
   padding-bottom: 2px;
 }

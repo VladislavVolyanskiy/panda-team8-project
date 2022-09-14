@@ -1,43 +1,38 @@
-.examples {
-}
 .examples__title {
-  font-family: 'Cera Pro';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: $title-color;
   margin-bottom: 16px;
 }
+
 .examples__list {
   display: flex;
-
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 16px;
   column-gap: 20px;
-
   @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
     gap: 32px;
   }
 }
 
-.examples__list .examples__wrapper {
+.examples__item {
+  width: calc((100% - 20px) / 2);
+}
+
+.examples__wrapper {
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   position: absolute;
-  z-index: 2;
 }
 
-.examples__item {
-  position: relative;
-  z-index: 1;
+.examples__item-card {
   width: 130px;
   height: 158px;
   display: flex;
-  opacity: 0.8;
-  background: $contacsBackgroundColor;
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: inset 1px 1px 16px $placeholder-color,
     inset -1px -1px 16px $contacsBackgroundColor;
   border-radius: 50px 0px;
@@ -52,6 +47,7 @@
     height: 382px;
   }
 }
+
 .examples__text {
   font-weight: 400;
   font-size: 14px;

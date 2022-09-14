@@ -1,247 +1,232 @@
 .order__subtitle {
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 
-    color: #487996;
-@media screen and (min-width: 768px){
+  color: #487996;
+  @media screen and (min-width: 768px) {
     font-size: 24px;
-}
-    @media screen and (min-width: 1440px) {
-        text-align: left;
-        font-size: 36px;
-    }
-}
+  }
 
+  @media screen and (min-width: 1440px) {
+    text-align: left;
+    font-size: 36px;
+  }
+}
 .order__form {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        width: 400px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 120px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        width: 555px;
-    }
+  }
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
 }
 
 .first-subtittle {
-    margin-top: 40px;
-    margin-bottom: 28px;
-
-    @media screen and (min-width: 768px) {
-        text-align: center;
-        font-size: 24px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        margin-top: 0;
-        font-size: 36px;
-    }
-
+  margin-top: 40px;
+  margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 0;
+    font-size: 36px;
+  }
 }
 
 .connect__choice {
-    margin-bottom: 44px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 
-    color: #2B2B2B;
-    @media screen and (min-width: 1440px){
-        font-size: 18px;
-    }
+  color: #2b2b2b;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
 .connect__field {
-    width: 100%;
-    height: 20px;
-    padding: 0;
-    outline: transparent;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #487996;
-
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  outline: transparent;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #487996;
 }
 
 .connect__field:hover,
 .connect__field:focus {
-    border-bottom: 1px solid #008CEF;
-
+  border-bottom: 1px solid #008cef;
 }
-
-.connect__field:focus+.connect__name,
-.connect__field:not(:placeholder-shown)+.connect__name {
-    transform: translateY(-40px);
+.connect__field:focus + .connect__name,
+.connect__field:not(:placeholder-shown) + .connect__name {
+  transform: translateY(-40px);
 }
-
-.connect__field:focus+.connect__email,
-.connect__field:not(:placeholder-shown)+.connect__email {
-    transform: translateY(-40px);
+.connect__field:focus + .connect__email,
+.connect__field:not(:placeholder-shown) + .connect__email {
+  transform: translateY(-40px);
 }
-
 .connect__view {
-    display: none;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #487996;
-    outline: transparent;
+  display: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #487996;
+  outline: transparent;
 }
 
 .connect__choice:hover .connect__view {
-    display: block;
-    border: 0;
+  display: block;
+  border: 0;
 }
 
 .connect__featback {
-    position: relative;
-    padding: 22px 20px;
-    margin-bottom: 4px;
-    display: block;
-    outline: transparent;
-    width: 100%;
-    height: 199px;
-    resize: none;
-    border: 1px solid #487996;
-    border-radius: 50px 0px;
+  position: relative;
+  padding: 22px 20px;
+  margin-bottom: 4px;
+  display: block;
+  outline: transparent;
+  width: 100%;
+  height: 199px;
+  resize: none;
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
 }
 
 .connect__featback:hover,
 .connect__featback:focus {
-    border: 1px solid #008CEF;
+  border: 1px solid #008cef;
 }
 
 .connect__featback::placeholder {
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 
-    color: #CDCDCD;
-    @media screen and (min-width: 1440px){
-        font-size: 18px;
-    }
+  color: #cdcdcd;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
 .connect__footnote {
-    width: 280px;
-    margin-bottom: 40px;
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+  width: 280px;
+  margin-bottom: 40px;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 
-    color: #CDCDCD;
-    @media screen and (min-width: 1440px) {
-            font-size: 18px;
-        }
+  color: #cdcdcd;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
-
 .form-field {
-    margin-bottom: 44px;
+  margin-bottom: 44px;
 }
 
 .connect__name,
 .connect__email {
-    transform: translateY(-20px);
-    margin-bottom: 32px;
-    display: block;
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #2B2B2B;
-    @media screen and (min-width: 1440px) {
-            font-size: 18px;
-        }
+  transform: translateY(-20px);
+  margin-bottom: 32px;
+  display: block;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2b2b2b;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
-
 .connect__textarea {
-    display: block;
-    font-family: "Cera Pro";
-    color: #2B2B2B;
-    margin-bottom: 4px;
-    @media screen and (min-width: 1440px) {
-            font-size: 18px;
-        }
+  display: block;
+  font-family: 'Montserrat Alternates';
+  color: #2b2b2b;
+  margin-bottom: 4px;
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
-
 .connect__message {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .form-select {
-    border-bottom: 1px solid #487996;
-    position: relative;
-
-    &:hover .connect__icon {
-        transform: rotate(180deg);
-    }
+  border-bottom: 1px solid #487996;
+  position: relative;
+  &:hover .connect__icon {
+    transform: rotate(180deg);
+  }
 }
-
 .otextarea-wrap {
-    position: relative;
+  position: relative;
 }
-
 .connect__icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .connect__clip {
-    position: absolute;
-    display: block;
-    bottom: 18px;
-    right: 19px;
+  position: absolute;
+  display: block;
+  bottom: 18px;
+  right: 19px;
 }
 
 .connect__select:hover {
-    background-color: rgba(72, 121, 150, 0.5);
-    color: #ffffff;
+  background-color: rgba(72, 121, 150, 0.5);
+  color: #ffffff;
 }
-
+.button {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 56px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+    height: 56px;
+  }
+}
 .order__btn {
-    width: 100%;
-    @extend %btn;
-
-    @media screen and (min-width: 768px) {
-        width: 177px;
-        position: absolute;
-        top: 105%;
-        right: 155px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        width: 177px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+  width: 100%;
+  @extend %btn;
+  @media screen and (min-width: 768px) {
+    width: 177px;
+    position: absolute;
+    right: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    right: 0;
+  }
 }
-
 .connect__file {
-    display: none;
+  display: none;
 }
-
 .odecktopconnect-wrap {
-    @media screen and (min-width: 1440px) {
-        display: flex;
-        justify-content: space-around;
-    }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-
 .oform-wrap {
-    position: relative;
+  position: relative;
 }
