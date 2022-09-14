@@ -1,13 +1,25 @@
 .section__model-title {
   margin-bottom: 16px;
+  @include desktop {
+    margin-bottom: 24px;
+  }
 }
 
 .service__wrap {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
   @include tablet {
     justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  @include desktop {
+    font-size: 18px;
   }
 }
 
@@ -34,6 +46,24 @@
 .service__example-pic {
   margin: 0 auto;
   @include tablet {
-    margin: 0 34px;
+    position: absolute;
+    left: 460px;
+    top: -20px;
+  }
+  @include desktop {
+    position: absolute;
+    left: 560px;
+    top: -120px;
+  }
+}
+.service__example-png {
+  width: 280px;
+  @include tablet {
+    width: 246px;
+    height: 144px;
+  }
+  @include desktop {
+    width: 555px;
+    height: 301px;
   }
 }
