@@ -1,29 +1,17 @@
-.hero {
-  &__title {
-    font-family: 'Cera Pro', cursive;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $title-color;
+.container--flex.contacts-page {
+ @include desktop {
+  justify-content: space-between;
+  max-width: 1142px;
+  padding-left: 0;
+  padding-right: 0;
+ }
 
-    margin-bottom: 16px;
-  }
-
-  &__text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: $text-color;
-
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 767px) {
     gap: 24px;
@@ -36,6 +24,7 @@
 
   @media screen and (min-width: 1440px) {
     gap: 64px;
+    margin-bottom: 170px;
   }
   &__list {
     list-style: none;
@@ -43,6 +32,15 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    @include desktop {
+      gap: 18px;
+    }
+    & .list__item:not(:last-child) {
+        margin-bottom: 8px;
+        @include desktop {
+          margin-bottom: 18px;
+        }
+      }
 
     &--phone {
       margin-right: 25px;
@@ -50,27 +48,43 @@
 
     &--email {
       margin-right: auto;
+      .pretitle {
+        text-transform: none;
+      }
     }
-  }
-
-  &__title {
-    font-family: 'Cera Pro';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $title-color;
   }
 
   &__item {
     text-decoration: none;
+    // text-transform: capitalize;
 
     font-size: 16px;
     line-height: 20px;
 
     color: $text-color;
   }
+    
 }
-
+.list.work-time {
+  text-transform: capitalize;
+}
+.work-time .contacts__item {
+  margin-bottom: 8px;
+  @include tablet {
+    text-align: end;
+    }
+        @include desktop {
+          text-align: start;
+          margin-bottom: 18px;
+        }
+}
+.work-time .contacts__item span {
+  display: block;
+  @include desktop {
+    display: inline;
+  }
+  
+}
 .desktop {
   display: flex;
   flex-direction: row-reverse;
