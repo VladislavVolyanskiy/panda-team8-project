@@ -1,20 +1,34 @@
 .model-hero__title {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  @include desktop {
+    margin-bottom: 24px;
+  }
 }
 
 .model-hero__text-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 40px;
-    @include desktop {
-        flex-wrap: nowrap;
-        gap: 72px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  @include tablet {
+    width: 515px;
+  }
+  @include desktop {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 72px;
+    margin-bottom: 0px;
+  }
 }
 
 .model-hero__text {
-    // flex-basis: 50%;
+  // flex-basis: 50%;
+  @include desktop {
+    width: 515px;
+  }
 }
-
-
