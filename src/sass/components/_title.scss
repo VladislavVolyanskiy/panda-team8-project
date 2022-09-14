@@ -1,4 +1,5 @@
 .page-title {
+  font-family: 'Cera Pro';
   @include font(24, 30, 700, 0.03);
   text-transform: uppercase;
   color: $title-color;
@@ -11,6 +12,7 @@
 }
 
 .pretitle {
+  font-family: 'Cera Pro';
   @include font(18, 23, 700, 0.03);
   text-transform: uppercase;
   color: $title-color;
