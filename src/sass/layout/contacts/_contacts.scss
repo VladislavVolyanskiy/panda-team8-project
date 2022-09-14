@@ -1,7 +1,18 @@
 
+.container--contacts.contacts-page {
+  @include desktop {
+    justify-content: space-between;
+    max-width: 1142px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 767px) {
     gap: 24px;
@@ -13,9 +24,10 @@
   }
 
   @media screen and (min-width: 1440px) {
-    gap: 68px;
+    gap: 64px;
+    margin-bottom: 170px;
   }
-  
+
   &__list {
     list-style: none;
 
@@ -23,38 +35,68 @@
     flex-direction: column;
     gap: 8px;
 
+    @include desktop {
+      gap: 18px;
+    }
+
+    & .list__item:not(:last-child) {
+      margin-bottom: 8px;
+
+      @include desktop {
+        margin-bottom: 18px;
+      }
+    }
+
     &--phone {
-      @media screen and (min-width: 768px) and (max-width: 1439px){
-        margin-right: 25px;
-      }
-      
+      margin-right: 25px;
     }
 
-    &--email{
-      @media screen and (min-width: 768px) and (max-width: 1439px){
-        margin-right: 120px;
-      }
-      
-    }
-  }
+    &--email {
+      margin-right: auto;
 
-  &__title {
-    font-family: 'Cera Pro';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $title-color;
+      .pretitle {
+        text-transform: none;
+      }
+    }
   }
 
   &__item {
     text-decoration: none;
+    // text-transform: capitalize;
 
     font-size: 16px;
     line-height: 20px;
+
+    color: $text-color;
+  }
+
+}
+
+.list.work-time {
+  text-transform: capitalize;
+}
+
+.work-time .contacts__item {
+  margin-bottom: 8px;
+
+  @include tablet {
+    text-align: end;
+  }
+
+  @include desktop {
+    text-align: start;
     margin-bottom: 18px;
   }
 }
-  
+
+.work-time .contacts__item span {
+  display: block;
+
+  @include desktop {
+    display: inline;
+  }
+
+}
 
 .desktop {
   display: flex;
