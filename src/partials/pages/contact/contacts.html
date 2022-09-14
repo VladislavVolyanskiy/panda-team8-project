@@ -1,9 +1,7 @@
 <section class="section"> 
-
-    <div class="container container--flex contacts-page">
+    <div class="container container--contacts">
         <form class="cform">
-            <h2 class="pretitle">Зв'яжіться з нами</h2>
-
+            <h2 class="cform__title pretitle">Зв'яжіться з нами</h2>
             <label class="cform__field">
                 <input class="cform__input" type="text" name="name" placeholder=" ">
                 <span class="cform__label">Ім'я</span>
@@ -14,16 +12,8 @@
             </label>
             <label class="cform__field">
                 <span class="cform__textarea-label">Повідомлення</span> 
-
-                <textarea 
-                class="cform__textarea" 
-                name="message" 
-                placeholder="Залишіть своє повідомлення"
-                ></textarea>
-            <svg class="connect__clip" width="22" height="20">
-                <use href="/src/images/symbol-defs.svg#icon-simple-line-icons_paper-clip"></use>
-            </svg>
-
+                <textarea class="cform__textarea" name="message" placeholder="Залишіть своє повідомлення"></textarea>
+                <svg width="20" height="20" class="cform__icon"><use href="/src/images/symbol-defs.svg#icon-simple-line-icons_paper-clip"></use></svg>
             </label>
             <p class="cform__text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
             <button class="cform__button" type="submit">
@@ -34,10 +24,8 @@
             <div class="contacts__list contacts__list--phone">
                 <h2 class="pretitle">Телефони</h2>
                 <ul class="list">
-
-                    <li class="list__item"><a class="contacts__item" href="tel:+38(095)-73-84-551">+38 (095) -73-84-551</a></li>
-                    <li class="list__item"><a class="contacts__item" href="tel:+38(098)-00-25-235">+38 (098) -00-25-235</a></li>
-
+                    <li class="contacts__item"><a href="tel:+38(095)-73-84-551">+38 (095) -73-84-551</a></li>
+                    <li class="contacts__item"><a href="tel:+38(098)-00-25-235">+38 (098) -00-25-235</a></li>
                 </ul>
             </div>
             <div class="contacts__list contacts__list--email">
@@ -46,11 +34,9 @@
             </div>
             <div class="contacts__list">
                 <h2 class="pretitle">Робочий час</h2>
-
-                <ul class="list work-time">
-                    <li class="contacts__item">Пн-пт: <span>з 8:00 до 19:00</span> </li>
-                    <li class="contacts__item">Сб, Нд: <span>з 10:00 до 17:00</span> </li>
-
+                <ul class="list">
+                    <li class="contacts__item">Пн-пт: <br> з 8:00 до 19:00</li>
+                    <li class="contacts__item">Сб, Нд: <br> з 10:00 до 17:00</li>
                 </ul>
             </div>
         </div>
