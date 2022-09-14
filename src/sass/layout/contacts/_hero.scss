@@ -1,4 +1,3 @@
-
 .hero {
   @include desktop {
     padding-left: 149px;
@@ -8,116 +7,124 @@
   .hero-container {
     @include tablet {
       display: flex;
+
     }
   }
+
   &__list {
     list-style: none;
   }
+
   .page-title {
     font-family: 'Cera Pro';
     width: 100%;
 
     color: $title-color;
 
-    &__title {
-      margin-bottom: 16px;
+    margin-bottom: 16px;
 
-      @include desktop {
-        margin-bottom: 24px;
-      }
+    @include desktop {
+      margin-bottom: 24px;
     }
   }
 
-  .hero__text {
-    font-family: 'Montserrat', sans-serif;
-    @include font(16, 20, 400, 0.03);
-    @include desktop {
-      @include font(18, 23, 300, 0.03);
 
-    }
-
-    &:not(:last-child){
-        margin-bottom: 16px;
-    }    
 }
-&__div-position{
 
 
-    display: block;
-    &:nth-child(3) {
-      display: inline;
-      @include desktop {
-        display: block;
-      }
-    }
-    &:nth-child(-n + 2) {
-      margin-bottom: 16px;
-      @include desktop {
-        margin-bottom: 24px;
-      }
-    }
-    &:last-child {
-      position: relative;
-    }
-    &:last-child::after {
-      content: '\1F609';
-      position: absolute;
-      top: 50%;
-      right: -30px;
-      font-size: 22px;
-      transform: translateY(-50%);
-      @include tablet {
-        right: -42px;
-      }
-      @include desktop {
-        font-size: 49px;
-        left: 0;
-        top: 105px;
-      }
-    }
+
+
+.hero__text {
+  font-family: 'Montserrat', sans-serif;
+  @include font(16, 20, 400, 0.03);
+
+  @include desktop {
+    @include font(18, 23, 300, 0.03);
   }
 
-  .video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: #000;
+  color: $text-color;
 
-    @media screen and (max-width: 767px) {
-      width: 280px;
+  display: block;
 
-      height: 171px;
-      margin-bottom: 16px;
-      padding-bottom: 56.25%;
+  &:nth-child(3) {
+    display: inline;
 
-      @include centeredMarg;
-    }
-
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      padding-bottom: 38.867%;
-    }
-    @include tablet {
-      min-width: 336px;
-      height: 261px;
-      margin-right: 32px;
-    }
     @include desktop {
-      min-width: 555px;
-      height: 315px;
+      display: block;
     }
   }
-  .video__item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
+  &:nth-child(-n+2) {
+    margin-bottom: 16px;
 
-    object-fit: cover;
+    @include desktop {
+      margin-bottom: 24px;
+    }
   }
 
+  &:last-child {
+    position: relative;
+  }
+
+  &:last-child::after {
+    content: '\1F609';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    font-size: 22px;
+    transform: translateY(-50%);
+
+    @include tablet {
+      right: -42px;
+    }
+
+    @include desktop {
+      font-size: 49px;
+      left: 0;
+      top: 105px;
+    }
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #000;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 171px;
+    margin-bottom: 16px;
+    padding-bottom: 56.25%;
+
+    @include centeredMarg;
+  }
+
+  @media screen and (min-width:320px) and (max-width:767px) {
+    padding-bottom: 38.867%;
+  }
+
+  @include tablet {
+    min-width: 336px;
+    height: 261px;
+    margin-right: 32px;
+  }
+
+  @include desktop {
+    min-width: 555px;
+    height: 315px;
+  }
+}
+
+.video__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
