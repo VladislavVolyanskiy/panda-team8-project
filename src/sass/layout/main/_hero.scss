@@ -15,6 +15,10 @@
     left: 235px;
   }
 }
+.main-hero {
+  font-family: 'Cera Pro';
+}
+
 .main-hero__title {
   @include font(18, 21, 400, null);
   font-style: normal;
