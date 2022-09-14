@@ -1,37 +1,79 @@
 .hero {
+  @include desktop {
+      padding-left: 149px;
+      padding-right: 149px;
+  }
+
+  .hero-container {
+    @include tablet {
+        display: flex;
+        
+      }
+  }
   &__list {
     list-style: none;
   }
-  &__title {
+    .page-title {
     font-family: 'Cera Pro';
-    font-weight: 700;
     width: 100%;
 
     color: $title-color;
 
     margin-bottom: 16px;
-
-    @media screen and (max-width: 767px) {
-      font-size: 24px;
-      line-height: calc(30px / 24px);
-    }
-    @include tablet {
-      font-size: 36px;
-      line-height: calc(45px / 36px);
+    @include desktop {
+      margin-bottom: 24px;
     }
   }
+  
+  
+}
 
-  &__text {
+  
+
+
+.hero__text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+    @include font(16, 20, 400, 0.03);
+    @include desktop {
+      @include font(18, 23, 300, 0.03);
+    }
+
     color: $text-color;
 
-    &:not(:last-child) {
+    display: block;
+    &:nth-child(3) {
+        display: inline;
+        @include desktop {
+            display: block;
+          }
+      }
+    &:nth-child(-n+2) {
       margin-bottom: 16px;
+      @include desktop {
+        margin-bottom: 24px;
+      }
+    }
+        &:last-child {
+          position: relative;
+        }
+    &:last-child::after {
+      content: '\1F609';
+      position: absolute;
+      top: 50%;
+      right: -30px;
+      font-size: 22px;
+      transform: translateY(-50%);
+      @include tablet {
+        right: -42px;
+      }
+      @include desktop {
+        font-size: 49px;
+        left: 0;
+        top: 105px;
+      }
     }
   }
-}
+
 .video {
   position: relative;
   width: 100%;
@@ -41,20 +83,23 @@
   background-color: #000;
 
   @media screen and (max-width: 767px) {
-    max-width: 280px;
+    width: 280px;
     height: 171px;
     margin-bottom: 16px;
     padding-bottom: 56.25%;
 
     @include centeredMarg;
   }
-
+  @media screen and (min-width:320px) and (max-width:767px) {
+    padding-bottom: 38.867%; 
+  }
   @include tablet {
-    max-width: 336px;
+    min-width: 336px;
     height: 261px;
+    margin-right: 32px;
   }
   @include desktop {
-    max-width: 555px;
+    min-width: 555px;
     height: 315px;
   }
 }
